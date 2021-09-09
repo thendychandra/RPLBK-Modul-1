@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum RPLBK - Kelompok 18</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1>Peter Answers</h1>
+        <p>By Thendy & Faris (Kelompok 18)</p>
+    </div>
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <div class="text-center" id="loading" style="display:none">
+                <div class="spinner-border" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <p id="show">
+                Welcome to Peter Answers...<br>
+                Do you need to ask a question? Are you looking for answers? Peter offers you a space to ask anything you want. However, before each question you must write a petition. If the answer is not what you expected, at least you make catharsis and ask again.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="ptt">Petition</label>
+        <input type="text" class="form-control" id="ptt" aria-describedby="emailHelp" oninput="change()" maxlength="42" placeholder="Peter please answer the following question">
+        <small id="pttHelp" class="form-text text-muted">The formula to enter the petition is by writing: <b>Peter please answer the following question</b> or simply: <b>Peter please answer</b>.</small>
+      </div>
+      <div class="form-group">
+        <label for="qst">Question</label>
+        <input type="text" class="form-control" id="qst">
+        <small id="qstHelp" class="form-text text-muted">When your question is ready, press <b>SEND</b> button. Wait for a while and you will see the answer.</small>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="submit()" id="submit">SEND</button>
+      <button type="submit" class="btn btn-primary" style="display:none" onclick="reset()" id="reset">RESET</button>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
